@@ -4,7 +4,7 @@ function getWeather () {
     
     let cityName = document.querySelector("#city").value;
     
-    fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=f49f974ab3536d74d780021f75e07be5`).then((response) => response.json()).then((data) => {
+    fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=f49f974ab3536d74d780021f75e07be5`).then((response) => response.json()).then((data) => {
         
         console.log(data.list);
 
@@ -33,7 +33,7 @@ function getWeather () {
         if (cityName != 0) {
             pagina.classList.remove('d-none');
         }
-        
+
         // Stampare la città digitata con la prima lettera maiuscola
         document.querySelector('#nomeCittà').innerHTML = cityName.charAt(0).toUpperCase() + cityName.slice(1);
         
