@@ -13,9 +13,12 @@
         <div class="row justify-content-center">
             <h1 class="display-1 mb-4">Open Weather</h1>
             <div class="col-10 col-md-6 mb-3">
-                <div class="form-floating mb-3">
-                    <input class="form-control" type="text" id="city" placeholder="Roma" name="city">
-                    <label for="city">Inserisci la città</label>
+                <div class="input-group mb-3">
+                    <div class="form-floating">
+                        <input class="form-control rounded-0" type="text" id="city" placeholder="Roma" name="city">
+                        <label for="city">Inserisci la città</label>
+                    </div>
+                    <button id="reset" class="input-group-text d-none"><i class="fa-solid fa-circle-xmark"></i></button>    
                 </div>
                 <button class="btn btn-primary fs-4 px-4" id="button" type="button">Invia</button>
             </div>

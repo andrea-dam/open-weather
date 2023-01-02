@@ -1,4 +1,5 @@
 let invia = document.querySelector('#button');
+let reset = document.querySelector('#reset');
 
 let pagina = document.querySelector('#pagina');
 
@@ -48,8 +49,8 @@ function getWeather () {
         } else if (weather[0].main == "Clear") {
             document.querySelector('#meteo').innerHTML = "Sereno";
             weatherIcon.classList.add('fa-sun');
-        } else {
-            weather[0].main;
+        } else if (weather[0].main == "Rain") {
+            document.querySelector('#meteo').innerHTML = "Pioggia";
         };
         
         // Stampare la temperatura
@@ -64,5 +65,12 @@ function getWeather () {
 };
 
 invia.addEventListener('click', () => {
-    return getWeather();
+    reset.classList.remove('d-none');
+    getWeather();
 });
+
+reset.addEventListener('click', () => {
+    document.querySelector("#city").value = "";
+    pagina.classList.add('d-none');
+    reset.classList.add('d-none');
+})
