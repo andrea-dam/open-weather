@@ -1,8 +1,9 @@
+// Pulsanti
 let invia = document.querySelector('#button');
 let reset = document.querySelector('#reset');
-
+// Sezione principale che appare quando si fa una ricerca
 let pagina = document.querySelector('#pagina');
-
+// Icona meteo
 let weatherIcon = document.querySelector('#icona-meteo');
 
 function getWeather () {
@@ -51,6 +52,7 @@ function getWeather () {
             weatherIcon.classList.add('fa-sun');
         } else if (weather[0].main == "Rain") {
             document.querySelector('#meteo').innerHTML = "Pioggia";
+            weatherIcon.classList.add('fa-cloud-rain');
         };
         
         // Stampare la temperatura
