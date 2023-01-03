@@ -16,35 +16,23 @@ h2, h3, h4, h5, h6 {
     font-weight: 200;
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
+
     #pagina {
         background-color: white;
     }
 }
 
-@media (min-width: 768px) {
-
+@media only screen and (min-width: 768px) {
+    
     main {
         background-color: white;
         border: solid rgb(212, 212, 212) 1px;
         border-radius: 10px;
         box-shadow: 0 .5rem 1rem rgb(175, 175, 175);
     }
-
+    
     #pagina {
         background-color: #F8F9FA;
     }
 }
-
-
-/* body {
-    background-color: cornflowerblue;
-} */
-
-/* #input-field {
-    background: radial-gradient(circle, rgba(24,77,106,0) 0%, rgba(100,149,237,1) 50%), url(/media/tree-2916763.jpg);
-    background-size: cover;
-    background-position: center;
-    /* height: 100vh; */
-    /* background-repeat: no-repeat;
-} */
