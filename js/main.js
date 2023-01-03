@@ -17,11 +17,14 @@ function getWeather() {
     
     input.blur(); // Toglie il focus dal campo input
 
+    weatherIcon.classList.remove('fa-sun', 'fa-cloud-sun', 'fa-cloud-rain');
+
     let cityName = input.value; // Valore inserito nel campo input
     
-    if (cityName == 0) {
+    if (cityName == 0) { // Se il campo è vuoto
         input.classList.add("is-invalid");
         avvertimento.classList.remove('d-none');
+        pagina.classList.add('d-none');
     } else {
         input.classList.remove("is-invalid");
         avvertimento.classList.add('d-none');
@@ -73,6 +76,7 @@ form.addEventListener('submit', (event) => {
 // Pulsante "Reset"
 reset.addEventListener('click', () => {
     input.value = "";
+    input.classList.remove('is-invalid');
     pagina.classList.add('d-none');
     reset.classList.add('d-none');
     avvertimento.classList.add('d-none');
