@@ -1,0 +1,33 @@
+/* font-family: 'Pridi', serif;
+font-family: 'Arvo', serif;
+font-family: 'Biryani', sans-serif; */
+
+* {
+    font-family: 'Biryani', sans-serif;
+    font-weight: 300;
+}
+
+h1 {
+    font-family: 'Pridi', serif;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', serif;
+}
+
+#button {
+    font-family: 'Pridi', serif;
+    font-weight: 200;
+}
+
+/* body {
+    background-color: cornflowerblue;
+} */
+
+/* #input-field {
+    background: radial-gradient(circle, rgba(24,77,106,0) 0%, rgba(100,149,237,1) 50%), url(/media/tree-2916763.jpg);
+    background-size: cover;
+    background-position: center;
+    /* height: 100vh; */
+    /* background-repeat: no-repeat;
+} */
