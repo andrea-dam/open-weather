@@ -20,6 +20,21 @@ h2, h3, h4, h5, h6 {
     font-weight: 200;
 }
 
+@media (min-width: 768px) {
+    
+    main {
+        background-color: white;
+        border: solid rgb(212, 212, 212) 1px;
+        border-radius: 10px;
+        box-shadow: 0 .5rem 1rem rgb(175, 175, 175);
+    }
+
+    #pagina {
+        background-color: #F8F9FA;
+    }
+}
+
+
 /* body {
     background-color: cornflowerblue;
 } */
