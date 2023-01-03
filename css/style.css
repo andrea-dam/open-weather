@@ -1,6 +1,4 @@
-/* font-family: 'Pridi', serif;
-font-family: 'Arvo', serif;
-font-family: 'Biryani', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Biryani:wght@200;300;400;600;700;800;900&family=Pridi:wght@200;300;400;500;600;700&display=swap');
 
 * {
     font-family: 'Biryani', sans-serif;
@@ -21,7 +19,7 @@ h2, h3, h4, h5, h6 {
 }
 
 @media (min-width: 768px) {
-    
+
     main {
         background-color: white;
         border: solid rgb(212, 212, 212) 1px;
