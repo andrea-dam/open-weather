@@ -21,7 +21,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .sereno {
-    background: linear-gradient(rgb(49, 96, 135, 0.397), rgba(49, 96, 135, 0.397)), url(./media/sun.png);
+    background: linear-gradient(rgb(49, 96, 135, 0.397), rgba(49, 96, 135, 0.397)), url(/open_weather/media/sun.png);
     background-size: cover;
     background-position: center;
     height: auto;
@@ -29,7 +29,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .nuvoloso {
-    background: linear-gradient(rgba(109, 109, 109, 0.397), rgba(109, 109, 109, 0.397)), url(./media/clouds.png);
+    background: linear-gradient(rgba(109, 109, 109, 0.397), rgba(109, 109, 109, 0.397)), url(/open_weather/media/clouds.png);
     background-size: cover;
     background-position: center;
     height: auto;
@@ -37,7 +37,7 @@ h2, h3, h4, h5, h6 {
 }
 
 .pioggia {
-    background: linear-gradient(rgb(49, 96, 135, 0.397), rgba(49, 96, 135, 0.397)), url(./media/rain_3.png);
+    background: linear-gradient(rgb(49, 96, 135, 0.397), rgba(49, 96, 135, 0.397)), url(/open_weather/media/rain_3.png);
     background-size: cover;
     background-position: center;
     height: auto;
