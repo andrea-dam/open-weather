@@ -16,23 +16,42 @@ h2, h3, h4, h5, h6 {
     font-weight: 200;
 }
 
-@media only screen and (max-width: 767px) {
-
-    #pagina {
-        background-color: white;
-    }
+#pagina {
+    text-shadow: 0 0 12px rgb(0, 0, 0);
 }
 
-@media only screen and (min-width: 768px) {
-    
-    main {
-        background-color: white;
-        border: solid rgb(212, 212, 212) 1px;
-        border-radius: 10px;
-        box-shadow: 0 .5rem 1rem rgb(175, 175, 175);
-    }
-    
-    #pagina {
-        background-color: #F8F9FA;
-    }
+.sereno {
+    background: linear-gradient(rgb(49, 96, 135, 0.397), rgba(49, 96, 135, 0.397)), url(/media/sun.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.nuvoloso {
+    background: linear-gradient(rgba(109, 109, 109, 0.397), rgba(109, 109, 109, 0.397)), url(/media/clouds.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.pioggia {
+    background: linear-gradient(rgb(49, 96, 135, 0.397), rgba(49, 96, 135, 0.397)), url(/media/rain_3.png);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: auto;
+}
+
+.bg-cloudy {
+    background-color: lightgrey;
+}
+
+.bg-clear {
+    background-color: lightskyblue;
+}
+
+.bg-rain {
+    background-color: lightslategray;
 }

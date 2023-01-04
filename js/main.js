@@ -1,3 +1,7 @@
+let body = document.querySelector('#body');
+
+let author = document.querySelector('#autore');
+
 let form = document.querySelector('#form'); // Form d'inserimento città
 
 let reset = document.querySelector('#reset'); // Pulsante reset
@@ -16,8 +20,6 @@ function getWeather() {
     reset.classList.remove('d-none'); // Fa apparire il pulsante "reset"
     
     input.blur(); // Toglie il focus dal campo input
-
-    weatherIcon.classList.remove('fa-sun', 'fa-cloud-sun', 'fa-cloud-rain');
 
     let cityName = input.value; // Valore inserito nel campo input
     
@@ -48,16 +50,23 @@ function getWeather() {
 
             document.querySelector('#nomeCittà').innerHTML = cityName.charAt(0).toUpperCase() + cityName.slice(1); // Stampare la città digitata con la prima lettera maiuscola
             
+            pagina.classList.remove('sereno', 'nuvoloso', 'pioggia');
+            body.classList.remove('bg-cloudy', 'bg-clear', 'bg-rain', 'bg-light');
+
             // Stampare il meteo e tradurlo in italiano
             if (weather[0].main == "Clouds") {
                 document.querySelector('#meteo').innerHTML = "Nuvoloso";
-                weatherIcon.classList.add('fa-cloud-sun');
+                pagina.classList.add('nuvoloso');
+                body.classList.add('bg-cloudy');
             } else if (weather[0].main == "Clear") {
                 document.querySelector('#meteo').innerHTML = "Sereno";
-                weatherIcon.classList.add('fa-sun');
+                pagina.classList.add('sereno');
+                body.classList.add('bg-clear');
             } else if (weather[0].main == "Rain") {
                 document.querySelector('#meteo').innerHTML = "Pioggia";
-                weatherIcon.classList.add('fa-cloud-rain');
+                pagina.classList.add('pioggia');
+                body.classList.add('bg-rain');
+                author.classList.remove('text-muted');
             };
             
             document.querySelector('#temp').innerHTML = tempCelsius + " °C"; // Stampa la temperatura
@@ -81,5 +90,7 @@ reset.addEventListener('click', () => {
     reset.classList.add('d-none');
     avvertimento.classList.add('d-none');
     errore.classList.add('d-none');
+    author.classList.add('text-muted');
+    body.classList.add('bg-light');
     input.focus();
 });

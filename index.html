@@ -12,12 +12,12 @@
     <!-- Foglio CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body class="bg-light">
+<body id="body" class="bg-light">
     <main class="container text-center my-0 my-md-5">
         <div class="row justify-content-center mt-5 mb-3" id="input-field">
             <div class="mb-4">
                 <h1 class="display-1">Open Weather</h1>
-                <h6 class="text-muted fs-italic">by Andrea Damiani</h6>
+                <h6 class="fs-italic" id="autore">by Andrea Damiani</h6>
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6">
@@ -40,23 +40,22 @@
         </div>
         <div class="row justify-content-center mb-5">
             <div class="col-12 col-md-8">
-                <div class="container border rounded d-none" id="pagina">
-                    <h2 class="display-5 my-4" id="nomeCittà"></h2>
-                    <div class="row justify-content-around my-4">
+                <div class="container rounded text-light py-2 py-lg-5 d-none" id="pagina">
+                    <h2 class="display-5 mt-3 mb-4 mb-md-3 mb-lg-5" id="nomeCittà"></h2>
+                    <div class="row justify-content-start my-4">
                         <div class="col-6">
-                            <i id="icona-meteo" class="fa-solid fa-2x d-inline me-3"></i><p class="d-inline fs-4" id="meteo"></p>
-                        </div>
-                        <div class="col-6">
-                            <p class="d-inline fs-4" id="temp"></p><i class="fa-solid fa-temperature-half fa-2x ms-3 d-inline"></i>
+                            <p class="fs-1" id="meteo"></p>
+                            <p class="fs-1" id="temp"></p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </main>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/c2171b1e0d.js" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+    </div>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://kit.fontawesome.com/c2171b1e0d.js" crossorigin="anonymous"></script>
+<script src="./js/main.js"></script>
 </body>
 </html>
