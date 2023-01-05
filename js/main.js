@@ -34,7 +34,7 @@ function getWeather() {
     if (cityName == 0) { // Se il campo è vuoto
         input.classList.add("is-invalid");
         avvertimento.classList.remove('d-none');
-        pagina.classList.add('d-none');
+        pagina.classList.add('invisible');
 
         button.removeAttribute('disabled');
         testo.classList.remove('d-none');
@@ -118,7 +118,7 @@ form.addEventListener('submit', (event) => {
 reset.addEventListener('click', () => {
     input.value = "";
     input.classList.remove('is-invalid');
-    pagina.classList.add('d-none');
+    pagina.classList.add('invisible');
     reset.classList.add('d-none');
     avvertimento.classList.add('d-none');
     errore.classList.add('d-none');
