@@ -116,9 +116,9 @@ form.addEventListener('submit', (event) => {
 
 // Pulsante "Reset"
 reset.addEventListener('click', () => {
+    pagina.classList.add('invisible');
     input.value = "";
     input.classList.remove('is-invalid');
-    pagina.classList.add('invisible');
     reset.classList.add('d-none');
     avvertimento.classList.add('d-none');
     errore.classList.add('d-none');
