@@ -81,7 +81,6 @@ function getWeather() {
             
             document.querySelector('#nomeCittà').innerHTML = cityName.charAt(0).toUpperCase() + cityName.slice(1); // Stampare la città digitata con la prima lettera maiuscola
             
-            
             document.querySelector('#temp').innerHTML = tempCelsius + " °C"; // Stampa la temperatura
         });
     }
