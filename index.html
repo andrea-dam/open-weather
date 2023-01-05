@@ -21,8 +21,8 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-12 col-md-6">
-                    <div class="d-none alert alert-danger" id="avvertimento">Il campo "Città" è vuoto</div>
-                    <div class="d-none alert alert-danger" id="errore">Non è stata trovata nessuna città corrispondente a quella che hai inserito, riprova</div>
+                    <div class="d-none alert alert-danger" id="avvertimento">Il campo "Città" è vuoto.</div>
+                    <div class="d-none alert alert-danger" id="errore">Non è stata trovata nessuna città corrispondente a quella che hai inserito, riprova.</div>
                 </div>
             </div>
             <div class="col-10 col-md-6 mb-3">
@@ -34,7 +34,10 @@
                         </div>
                         <button id="reset" type="reset" class="input-group-text d-none rounded-0"><i class="fa-solid fa-circle-xmark"></i></button>    
                     </div>
-                    <button class="btn btn-primary fs-4 px-4" id="button" type="submit">Invia</button>
+                    <button class="btn btn-primary fs-4 px-4" id="invia" type="submit">
+                        <div class="spinner-border d-flex d-none" id="spinner"></div>
+                        <div id="in-invia">Invia</div>
+                    </button>
                 </form>
             </div>
         </div>
