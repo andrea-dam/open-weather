@@ -51,7 +51,7 @@ function getWeather() {
             
             if (info == undefined) { // Se abbiamo scritto male la città
                 errore.classList.remove('d-none');
-                
+
                 button.removeAttribute('disabled');
                 testo.classList.remove('d-none');
                 spinner.classList.add('d-none');
@@ -104,7 +104,7 @@ function delay () {
     testo.classList.remove('d-none');
     spinner.classList.add('d-none');
     
-    pagina.classList.remove('d-none'); // Rende visibili le informazioni richieste
+    pagina.classList.remove('invisible'); // Rende visibili le informazioni richieste
 }
 
 // Invio delle informazioni
