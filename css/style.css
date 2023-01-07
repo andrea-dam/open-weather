@@ -18,40 +18,35 @@ h2, h3, h4, h5, h6 {
 
 #pagina {
     text-shadow: 0 0 12px rgb(0, 0, 0);
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: auto;
 }
 
 .sereno {
     background: linear-gradient(rgb(49, 96, 135, 0.397), rgba(49, 96, 135, 0.397)), url(/open_weather/media/sun.jpg);
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    width: auto;
 }
 
 .nuvoloso {
     background: linear-gradient(rgba(109, 109, 109, 0.397), rgba(109, 109, 109, 0.397)), url(/open_weather/media/clouds.jpg);
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    width: auto;
 }
 
 .pioggia {
     background: linear-gradient(rgb(49, 96, 135, 0.397), rgba(49, 96, 135, 0.397)), url(/open_weather/media/rain_3.jpg);
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    width: auto;
 }
 
 .bg-cloudy {
     background-color: lightgrey;
+    transition: background-color 1s;
 }
 
 .bg-clear {
     background-color: lightskyblue;
+    transition: background-color 1s;
 }
 
 .bg-rain {
     background-color: lightslategray;
+    transition: background-color 1s;
 }
