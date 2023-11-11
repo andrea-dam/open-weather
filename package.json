@@ -1,0 +1,14 @@
+{
+  "name": "open_weather",
+  "version": "1.0.0",
+  "description": "Single-Page-Application realizzata in Vanilla Javascript dove è possibile risalire al meteo attuale inserendo la città desiderata. I dati sono ottenuti da https://openweathermap.org/ tramite fetch API.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
